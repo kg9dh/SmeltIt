@@ -48,6 +48,9 @@ public class Smelt extends JavaPlugin{
  						ingotsback=1;
  					}
  					
+ 					//remove the item
+ 					p.getInventory().remove(item);
+ 					
  					//cast it to an int (pulls it down -> 7.9 >> 7)
  					int ib = (int)ingotsback;
  					
